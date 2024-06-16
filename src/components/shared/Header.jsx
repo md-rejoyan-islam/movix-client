@@ -5,9 +5,11 @@ import { RxCross2 } from "react-icons/rx";
 import logo from "../../assets/movix-logo.svg";
 import usePopupControl from "../../hook/popupControl/usePopupControl";
 import { useEffect } from "react";
+import SearchField from "../header/SearchField";
 
 const Header = () => {
   const { isOpen, toggleMenu, dropDownRef } = usePopupControl();
+  // const { isOpen:sear, toggleMenu, dropDownRef } = usePopupControl();
 
   const { pathname } = useLocation();
 
@@ -99,21 +101,17 @@ const Header = () => {
               </li>
 
               <li>
-                <button>
-                  <BiSearch className="text-xl mt-3" />
-                </button>
+                <SearchField />
               </li>
             </ul>
           </div>
 
           {/* vertical  menu */}
           <div
-            className="vertical-menu flex items-center space-x-4 relative md:hidden px-4  z-50"
+            className="vertical-menu flex items-center  space-x-4 relative md:hidden px-4  z-50"
             ref={dropDownRef}
           >
-            <button>
-              <BiSearch className="text-xl" />
-            </button>
+            <SearchField />
             <button
               onClick={() => {
                 toggleMenu();

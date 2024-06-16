@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import MovieCard from "../../components/MovieCard/MovieCard";
 import { useSearchParams } from "react-router-dom";
 import SortMovieCard from "../../components/MovieCard/SortMovieCard";
 
@@ -16,8 +15,6 @@ function SearchResult() {
         <h2 className="text-[20px] sm:text-[24px] text-white text-nowrap px-2">
           Search results of &apos;{query}&apos;
         </h2>
-
-        {/* <div className="card-items flex flex-wrap justify-between   gap-x-4 gap-y-8 pt-6"> */}
         <div className="card-items grid xl:grid-cols-7 lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-4 xsm:grid-cols-3 grid-cols-2   gap-x-6 gap-y-8 pt-6">
           <SortMovieCard />
           <SortMovieCard />
