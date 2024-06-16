@@ -9,6 +9,8 @@ export default {
       pink: "var(--pink)",
       secondary: "var(--bg-secondary)",
       "black-light": "var(--black-light)",
+      "secondary-black": "var(--secondary-black)",
+      orange: "var(--orange)",
     },
     screens: {
       xsm: "360px",

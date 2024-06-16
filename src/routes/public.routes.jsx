@@ -2,6 +2,7 @@ import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/home/Home";
 import NowPlayingMovies from "../pages/movie/NowPlayingMovies";
 import PopularMovies from "../pages/movie/PopularMovies";
+import SingleMovie from "../pages/movie/SingleMovie";
 import TopMovies from "../pages/movie/TopMovies";
 import SearchResult from "../pages/search/SearchResult";
 import AiringTvShow from "../pages/tv-show/AiringTvShow";
@@ -27,6 +28,10 @@ const publicRouter = [
       {
         path: "/movie/now-playing",
         element: <NowPlayingMovies />,
+      },
+      {
+        path: "/movie/details/:id",
+        element: <SingleMovie />,
       },
       {
         path: "/login",
