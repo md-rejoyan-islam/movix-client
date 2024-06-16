@@ -14,3 +14,5 @@
 - Vite
 
 ## Links
+
+<a href="https://movix-plex.netlify.app/">Live Preview</a>
