@@ -1,6 +1,6 @@
 function CastCard() {
   return (
-    <div className="card w-fit rounded-[6px] shadow-md bg-[#173d7727] text-white">
+    <div className="card w-fit rounded-[6px] shadow-md bg-white/5 text-white">
       <img
         src="https://media.themoviedb.org/t/p/w276_and_h350_face/tgCkGE0LIggyjMmgSwHhpZAkfJs.jpg"
         className="rounded-[6px_6px_0_0] min-w-[140px] h-[170px]"

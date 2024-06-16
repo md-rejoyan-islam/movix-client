@@ -2,15 +2,13 @@ import { useState } from "react";
 import CastCard from "../../components/details/CastCard";
 import RecommentCard from "../../components/MovieCard/RecommentCard";
 import {
-  Button,
-  Description,
   Dialog,
   DialogPanel,
-  DialogTitle,
   Transition,
   TransitionChild,
 } from "@headlessui/react";
 import { RxCross2 } from "react-icons/rx";
+import TabItem from "./Tab";
 
 function SingleMovie() {
   let [isOpen, setIsOpen] = useState(false);
@@ -105,7 +103,7 @@ function SingleMovie() {
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
-                  className="w-16 md:w-20 h-16 md:h-20 text-white fill-white"
+                  className="w-16 md:w-[70px] h-16 md:h-[70px] text-white fill-white"
                   y="0px"
                   width="80px"
                   height="80px"
@@ -195,6 +193,10 @@ function SingleMovie() {
             <CastCard />
             <CastCard />
           </div>
+        </div>
+        <div className="cast py-6  relative">
+          <h3 className="font-semibold text-xl md:text-2xl ">Media</h3>
+          <TabItem />
         </div>
         <div className="cast py-6">
           <h3 className="font-semibold text-xl md:text-2xl ">
